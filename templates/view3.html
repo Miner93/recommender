@@ -1,0 +1,27 @@
+<!doctype html>
+<title>Recommender</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style2.css') }}">
+<div class=page>
+ <h1>MovieLens</h1>
+ <form method=post action="">
+ <table>
+  {% for field in form %}
+    <tr>
+    <td>{{ field.label }}</td><td>{{ field }}</td>
+    </tr>
+  {% endfor %}
+ </table>
+ <p><input type=submit value=Submit></form></p>
+
+ <p>
+ {% if result is not none %}
+	{{ result|safe }}
+ {% endif %}
+ {% if result is none %}
+	<h2>Podaj poprawny ID użytkownika i ilość rekomendacji</h2>
+ {% endif %}
+  </p>
+</div>
+
+
+

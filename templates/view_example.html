@@ -1,0 +1,21 @@
+<!doctype html>
+<title>Wykres</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style2.css') }}">
+<div class=page>
+ <form method=post action="">
+ <table>
+  {% for field in form %}
+    <tr>
+    <td>{{ field.name }}</td><td>{{ field }}</td>
+    <td>{{ field.label }}</td>
+    </tr>
+  {% endfor %}
+ </table>
+ <p><input type=submit value=Compute></form></p>
+
+ <p>
+ {% if result != None %}
+ <img src="{{ result }}" width="500">
+ {% endif %}
+ </p>
+</div>
