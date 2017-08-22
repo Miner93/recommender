@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 30 20:00:21 2017
-
-@author: Spider
-"""
-
 from model import InputForm
 from flask import *
 from compute import recommend_mv, recommend_bx

@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jul 10 18:10:19 2017
-
-@author: Spider
-"""
-
 import numpy as np
 import pandas as pd
 from sklearn import cross_validation as cv

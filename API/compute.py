@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 30 19:52:21 2017
-
-@author: Spider
-"""
-
 import pandas as pd
 from sklearn.externals import joblib
 

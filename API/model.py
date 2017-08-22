@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jul 30 19:55:35 2017
-
-@author: Spider
-"""
-
 from wtforms import Form, IntegerField, validators
 
 class InputForm(Form):
